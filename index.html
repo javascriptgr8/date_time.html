@@ -49,3 +49,26 @@
 
 </script>
 
+How to print current date in any formate
+<script>
+   var today=new Date();
+
+   var yy=today.getFullYear();
+
+   var mm=today.getMonth()+1;
+
+   var dd=today.getDay();
+
+   if(dd<10)
+   {
+       dd="0"+dd;
+   }
+
+   if(mm<10)
+   {
+       mm="0"+mm;
+   }
+
+   document.write(dd+": "+mm+": "+yy)
+</script>
+Output:-  02: 03: 2022
