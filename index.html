@@ -3,6 +3,15 @@
     document.write(today);
     document.write("<br>");
 
+    var year=today.getFullYear();
+    document.write(year);
+    document.write("<br>");
+
+    const month_ary = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    var month=today.getMonth();
+    document.write(month_ary[month]);
+    document.write("<br>");
+
     var weak=["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
     var day=today.getDay(); //2
     document.write(weak[day]); //Tuesday
@@ -39,3 +48,4 @@
 
 
 </script>
+
