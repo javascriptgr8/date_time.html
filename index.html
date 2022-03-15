@@ -1,0 +1,41 @@
+<script>
+    var today=new Date();
+    document.write(today);
+    document.write("<br>");
+
+    var weak=["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+    var day=today.getDay(); //2
+    document.write(weak[day]); //Tuesday
+
+    document.write("<br>");
+
+    var hour=today.getHours();
+    document.write(hour); //14
+
+    document.write("<br>");
+
+    var minute=today.getMinutes();
+    document.write(minute); //23
+
+    document.write("<br>");
+
+    var second=today.getSeconds();
+    document.write(second); 
+
+    document.write("<br>");
+
+    var am_pm=(hour >=12) ? "PM" : 'AM';
+    document.write(am_pm);  //PM
+
+    document.write("<br>");
+
+    var indianTime=(hour>=12 ) ? hour-12 : hour;
+    document.write(indianTime);  //2
+
+    document.write("<br>");
+
+    var time=indianTime+":"+minute+":"+second + am_pm;
+    document.write(time);
+
+
+</script>
